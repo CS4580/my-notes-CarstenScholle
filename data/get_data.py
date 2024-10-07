@@ -33,8 +33,11 @@ def unzip_file(file_path):
 def main():
     """Driven Function
     """
-    data = 'pandas01Data.zip'
-
+    # -i for icarus
+    # -k for kaggle
+    # -s for other servers <SERVER> <FILE>
+    # If no arguments are provided, print a usage message
+    data = 'plottingDemo01.zip'
     if len(sys.argv) == 2:
         download_file(SERVER_URL, sys.argv[1])
         return
