@@ -5,7 +5,7 @@ import zipfile
 import os
 import sys
 SERVER_URL = 'http://icarus.cs.weber.edu/~hvalle/cs4580/data/'
-SAVING_DIRECTORY = "./Downloads"
+SAVING_DIRECTORY = ".data/Downloads"
 
 
 def download_file(url: str, file_name: str):
@@ -41,6 +41,8 @@ def main():
     if len(sys.argv) == 2:
         download_file(SERVER_URL, sys.argv[1])
         return
+    
+    
     download_file(SERVER_URL, data)
 
 
