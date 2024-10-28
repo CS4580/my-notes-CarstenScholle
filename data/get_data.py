@@ -5,7 +5,7 @@ import zipfile
 import os
 import sys
 SERVER_URL = 'http://icarus.cs.weber.edu/~hvalle/cs4580/data/'
-SAVING_DIRECTORY = ".data/Downloads"
+SAVING_DIRECTORY = "./data/Downloads"
 
 
 def download_file(url: str, file_name: str):
@@ -37,7 +37,7 @@ def main():
     # -k for kaggle
     # -s for other servers <SERVER> <FILE>
     # If no arguments are provided, print a usage message
-    data = 'plottingDemo01.zip'
+    data = 'seaborData.zip'
     if len(sys.argv) == 2:
         download_file(SERVER_URL, sys.argv[1])
         return
